@@ -7,15 +7,35 @@
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
   <link rel="stylesheet" href="main.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 
 </head>
 
 <body>
+
+<main>
+<ul class="twitter" role="navigation">
+<li>PolyChAT</li>
+<li><i class="fa fa-user"></i></li>
+<li><i class="fa fa-bell"></i></li>
+<li><i class="fa fa-globe"></i></li>
+<li><i class="fa fa-cog"></i></li>
+</ul>
+</main>
+
+
+
+	 <button onclick="sendText()">Click me</button> 
+
+
+
+
+	<p id="text"> Hello World </p>
 	<script src="main.js"></script>
 	<script src="connectionHandler.js"></script>
-	<script src="messagesObserver.js"></script>
-	<script src="channelsObserver.js"></script>
+<!-- 	<script src="messagesObserver.js"></script>
+ -->	<script src="channelsObserver.js"></script>
 </body>
 </html>
