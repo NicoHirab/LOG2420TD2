@@ -10,17 +10,26 @@
   background-color: #5F9EA0;
   color: white;
   padding-left: 10px;
-  height: 70px;
   grid-template-columns: auto 270px 50px;
 }
 
+.grid-containerMessage{
+  display: grid;
+  grid-template-columns: auto 320px;
+  height: auto;
+}
+.bigGrid{
+ display: grid;
+ grid-template-rows: 70px 450px auto;
+ font-family: sans-serif;
+
+}
 .groupeActif{
   padding-top: 5px;
   font-size: 15px;
   line-height: 1.8;
 
 }
-
 .listesGroupes{
   border-left-style: solid;
   border-left-color: white;
@@ -29,9 +38,42 @@
   padding-right: 90px;
   padding-left: 10px;
   height: inherit;
-  line-height: 1.6;
+  line-height: 2;
 }
 .icones{
   display: inline;
   padding-top:30px
+}
+.boiteMessage{
+  overflow-y:auto ;
+  border-style: solid;
+  border-width: medium;
+  border-color: #DCDCDC;
+  width: auto;
+  height: inherit;
+}
+.Grid-container-boiteMessageInput{
+ display: grid;
+ grid-template-columns: 60px auto 60px;
+ position: relative;
+ height: 50px;
+ width: inherit;
+
+}
+.groupeDisponible{
+  color:	 #4d4dff;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+.separator{
+  display: grid;
+  grid-template-columns: auto 320px;
+}
+
+div.groupeDisponible div:nth-child(2n){
+background-color:#cccccc;
+}
+div.groupeDisponible div:nth-child(2n+1){
+background-color:#f2f2f2;
 }
