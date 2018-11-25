@@ -6,18 +6,30 @@ var date= Day+' '+ d.getDate()+', '+ d.getHours()+':'+d.getMinutes();
 return date;
 }
 
-document.getElementById("demo").innerHTML = dateFormat("2018-11-22T19:56:48.873Z");
-
-function popUp
 
 
-function ShowMessage(message,user,time,sender) {
-    if(sender){
-      document.getElementById("boiteDeMessage").innerHTML+='<div class="othersName">'+user+'<p class"othersText">'+message+'</p></div>'
+
+// function ShowMessage(message,user,time,sender) {
+function ShowMessage(sender){
+  let username =  document.createElement("div");
+  let usernameMessage= document.createElement("div");
+  usernameMessage.textContent= 'message';
+  let timeStamp= document.createElement("div");
+  timeStamp.textContent= 'time';
+  if(sender){
+      username.textContent='';
+      username.setAttribute("class","SenderName");
+      usernameMessage.setAttribute("class","SenderText");
+      timeStamp.setAttribute("class","SendingTimeStamp");
     }
     else {
-      document.getElementById("boiteDeMessage").innerHTML+='<p class"sender">'+message+'</p></div>'
+      username.textContent='user';
+      username.setAttribute("class","OthersName");
+      usernameMessage.setAttribute("class","ReceiverText");
+      timeStamp.setAttribute("class","ReceivingTimeStamp");
     }
-
-    output.appendChild(pre);
+      username.appendChild(usernameMessage);
+      username.appendChild(timeStamp);
+      console.log(username);
+    document.getElementById("chatBox").appendChild(username);
 }
